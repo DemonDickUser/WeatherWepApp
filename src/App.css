@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.main-app {
+  width: 100%;
+  height: 100vh;
+  background-image: url("pic.jpg");
+  background-size: 1920px 1080px;
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+}
+.header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 5vh;
+}
+.header ul {
+  height: 6vh;
+  display: flex;
+  padding-left: 50vh;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .header ul {
+    padding-left: 0vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header ul {
+    display: none;
+  }
+}
+.header ul li {
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vh;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.form-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+.form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.input {
+  width: 50vw;
+}
+.button {
+  padding-bottom: 0%;
+  height: 80%;
+  width: 10%;
+  transform: translateY(30%);
+}
+
+/*--------weather-variabls-----------*/
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.inline {
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10vh 12vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-page h3 {
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.last {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.icon {
+  display: flex;
+  top: 10%;
+  right: 14%;
+}
