@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, TextField } from "@material-ui/core";
 import Icon from "./Icon";
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Nerko+One&display=swap');
-</style>;
 
 function Weather() {
   /*----usestates----- */
@@ -25,7 +21,7 @@ function Weather() {
 
   const fetchData = async () => {
     const data = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=44c3df15e279e0d33f36bc627bd26005`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=use-your-own-api-here`
     );
 
     /*-----data-to-json-----------*/
